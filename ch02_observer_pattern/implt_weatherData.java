@@ -45,4 +45,11 @@ public class implt_weatherData implements itrf_subject {
     public void measurementsChanged() {
         
     }
+
+    public void setMeasurements(float temperature, float humidity, float pressure) {
+		this.temperature = temperature;
+		this.humidity = humidity;
+		this.pressure = pressure;
+		measurementsChanged();
+	}
 }
