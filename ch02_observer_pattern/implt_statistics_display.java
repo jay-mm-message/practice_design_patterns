@@ -6,6 +6,7 @@ public class implt_statistics_display implements itrf_observer, itrf_display_ele
     
     public implt_statistics_display(implt_weatherData weatherData) {
         this.weatherData = weatherData;
+        this.weatherData.registerObservers(this);
     }
 
     @Override

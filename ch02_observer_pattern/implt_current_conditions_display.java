@@ -6,6 +6,7 @@ public class implt_current_conditions_display implements itrf_observer, itrf_dis
 
     public implt_current_conditions_display(implt_weatherData weatherData) {
         this.weatherData = weatherData;
+        this.weatherData.registerObservers(this);
     }
 
     @Override

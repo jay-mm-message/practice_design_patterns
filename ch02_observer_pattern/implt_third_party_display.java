@@ -6,6 +6,7 @@ public class implt_third_party_display implements itrf_observer, itrf_display_el
 
     public implt_third_party_display(implt_weatherData weatherData) {
         this.weatherData = weatherData;
+        this.weatherData.registerObservers(this);
     }
 
     @Override
