@@ -5,6 +5,10 @@ import java.util.List;
 
 public class implt_weatherData implements itrf_subject {
     private List<itrf_observer> observers;
+
+    private float temperature;
+    private float humidity;
+    private float pressure;
     
     public implt_weatherData() {
         observers = new ArrayList<itrf_observer>();
@@ -22,20 +26,20 @@ public class implt_weatherData implements itrf_subject {
     @Override
     public void notifyObservers() {
         for (itrf_observer itrf_observer : observers) {
-            itrf_observer.update();
+            itrf_observer.update(getTemperature(), getHumidity(), getPressure());
         }
     }
     
-    public void getTemperature() {
-
+    public float getTemperature() {
+        return this.temperature;
     }
 
-    public void getHumidity() {
-
+    public float getHumidity() {
+        return this.humidity;
     }
 
-    public void getPressure() {
-
+    public float getPressure() {
+        return this.pressure;
     }
 
     public void measurementsChanged() {
