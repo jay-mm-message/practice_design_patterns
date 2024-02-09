@@ -2,3 +2,5 @@ observer pattern  = publishers + subscribers
 
 The observer pattern defines a one-to-many
 relationship between a set of object.
+
+ex. call the publishers the SUBJECT, and the subscribers the OBSERVERS
