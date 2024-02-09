@@ -14,7 +14,7 @@ public class implt_statistics_display implements itrf_observer, itrf_display_ele
     }
 
     @Override
-    public void update() {
+    public void update(float temperature, float humidity, float pressure) {
     }
     
 }

@@ -14,7 +14,7 @@ public class implt_third_party_display implements itrf_observer, itrf_display_el
     }
 
     @Override
-    public void update() {
+    public void update(float temperature, float humidity, float pressure) {
     }
     
 }

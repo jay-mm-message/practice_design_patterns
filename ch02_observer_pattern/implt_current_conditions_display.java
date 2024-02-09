@@ -14,7 +14,7 @@ public class implt_current_conditions_display implements itrf_observer, itrf_dis
     }
 
     @Override
-    public void update() {
+    public void update(float temperature, float humidity, float pressure) {
     }
     
 }
