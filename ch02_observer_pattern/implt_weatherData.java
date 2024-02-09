@@ -43,7 +43,7 @@ public class implt_weatherData implements itrf_subject {
     }
 
     public void measurementsChanged() {
-        
+        notifyObservers();
     }
 
     public void setMeasurements(float temperature, float humidity, float pressure) {
